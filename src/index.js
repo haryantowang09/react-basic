@@ -1,10 +1,7 @@
 import ReactDOM from 'react-dom';
-
-// import TicTacToe from './projects/tictactoe';
-import WeatherConverter from './project/kelvinWeather';
+import App from './project/App';
 
 ReactDOM.render(
-  // <TicTacToe/>,
-  <WeatherConverter/>,
+  <App/>,
   document.getElementById('root')
 );

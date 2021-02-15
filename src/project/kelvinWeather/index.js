@@ -13,10 +13,11 @@ const TempBox = (props) => {
       <input
         type="number"
         id={props.type}
+        value={props.cvalue}
         name={props.type.toLowerCase()}
+        autoFocus={(props.type === 'kelvin') ? true : false}
         disabled={(props.type !== 'kelvin') ? "disabled" : ""}
         onChange={(e) => props.onChange(e)}
-        value={props.cvalue}
       />
     </div>
   );
@@ -46,7 +47,7 @@ class WeatherConverter extends React.Component {
   render() {
     return (
       <section className="temp-section">
-        <TempBox type="kelvin"　onChange={(e) => this.handleChange(e)}/>
+        <TempBox type="kelvin"　onChange={(e) => this.handleChange(e)} />
         <div style={{ 'transform': 'scaleX(3)' }}>&#8594;</div>
         <TempBox type="celcius" cvalue={this.state.celcious} />
         <TempBox type="fahrenheit" cvalue={this.state.fahrenheit} />

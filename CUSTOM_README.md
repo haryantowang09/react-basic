@@ -2,7 +2,13 @@
 
 It is a collective source of portfolio web react application mostly the application are hooked and customized on my own.
 
-## List  
+## List
 
 1. Tictactoe - Official React Tutorial
 2. Kelvin Weather - Codecademy
+
+## Contact
+
+Haryanto  
+haryantowang09@gmail.com  
++6281806048470
