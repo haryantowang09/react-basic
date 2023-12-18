@@ -8,6 +8,7 @@ import {
 
 import TicTacToe from './tictactoe';
 import WeatherConverter from './kelvinWeather';
+import InfiniteScrolling from './infinite-scrolling';
 
 export default function App() {
   return (
@@ -18,6 +19,9 @@ export default function App() {
         </Route>
         <Route path="/kelvin-weather">
           <WeatherConverter/>
+        </Route>
+        <Route path="/infinite-scrolling">
+          <InfiniteScrolling/>
         </Route>
         <Route path="/">
           <nav>
@@ -30,6 +34,12 @@ export default function App() {
               </li>
               <li>
                 <Link to="/kelvin-weather">Kelvin Weather</Link>
+              </li>
+              <li>
+                <Link to="/whale-language">(WIP) Whale Language</Link>
+              </li>
+              <li>
+                <Link to="/infinite-scrolling">Infinite Scroller</Link>
               </li>
             </ul>
           </nav>
